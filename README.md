@@ -7,4 +7,4 @@ As I understood result[0] can be used for all commands, including the 'show vers
 
 Irrespective of this satisfaction, the ansible user stays blind with the output of the command on the server. The module does not support the register parameter to store the output for Ansible user to view or further play with the registered info.
 
-
+[cli_command](https://docs.ansible.com/ansible/latest/modules/cli_command_module.html), introduced in Ansible 2.7, amazingly helped not only in running the both commands described in [eric_eccli_command](https://docs.ansible.com/ansible/latest/modules/eric_eccli_command_module.html) documentation but the module also supports registering the output
