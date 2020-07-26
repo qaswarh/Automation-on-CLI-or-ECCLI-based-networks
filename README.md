@@ -9,6 +9,6 @@ Irrespective of this satisfaction, the Ansible user stays blind with the output 
 
 [cli_command](https://docs.ansible.com/ansible/latest/modules/cli_command_module.html), introduced in Ansible 2.7, amazingly had no issue in running the both commands, described in [eric_eccli_command](https://docs.ansible.com/ansible/latest/modules/eric_eccli_command_module.html) documentation, on Ericsson ECCLI/IPOS. And the module also supports registering the output.
 
-Get your inventory ready with hosts and vars like ansible_connection, ansible_user, ansible_ssh_pass (thhough plain text not recommmended), ansible_network_os to try both modules
+Get your inventory ready with hosts and vars like ansible_connection, ansible_user, ansible_ssh_pass (though plain text not recommmended), ansible_network_os to try both modules
 
 ![724TD2](https://user-images.githubusercontent.com/47313728/88474627-6244ed00-cedd-11ea-9e6d-591317056991.png)
