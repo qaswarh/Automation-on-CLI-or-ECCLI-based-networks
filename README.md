@@ -9,7 +9,7 @@ As I understood result[0] can be used for all commands, including the 'show vers
 
 Irrespective of presumbale commmand execution on the server(s), the Ansible user stays blind with the output of the command being run on the server. The module does not support the register parameter, as an example, to store the output for Ansible user to view or further play with the registered info.
 
-[cli_command](https://docs.ansible.com/ansible/latest/modules/cli_command_module.html), introduced in Ansible 2.7, amazingly had no issue in running the both commands, described in [eric_eccli_command](https://docs.ansible.com/ansible/latest/modules/eric_eccli_command_module.html) documentation, on Ericsson ECCLI/IPOS network. And the module also supports registering the output.
+[cli_command](https://docs.ansible.com/ansible/latest/modules/cli_command_module.html), introduced in Ansible 2.7, amazingly had no issue in running the said commands, described in [eric_eccli_command](https://docs.ansible.com/ansible/latest/modules/eric_eccli_command_module.html) documentation, on Ericsson ECCLI/IPOS network. And the module also supports registering the output.
 
 Get your inventory ready with hosts and vars like ansible_connection, ansible_user, ansible_ssh_pass (though plain text not recommmended), ansible_network_os to try both modules
 
