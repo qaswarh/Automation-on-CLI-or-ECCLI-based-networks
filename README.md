@@ -3,7 +3,7 @@ Choosing cli_command and/or eric_eccli_command modules for automation and config
 
 When started with configuration and automation on Ericsson nodes, found [eric_eccli_command](https://docs.ansible.com/ansible/latest/modules/eric_eccli_command_module.html) module introduced in Ansible 2.9 
 
-All example of two commands (show version and show running-config), mentioned in the module worked with ansible_connection and ansible_network_os introduced in the inventory, as per [ERIC_ECCLI Platform Options](https://docs.ansible.com/ansible/latest/network/user_guide/platform_eric_eccli.html). The predefined checks in result[0] and result[1], used in wait_for parameter, give clue to the Ansible user that at least commands are getting executed on the server(s)
+All example of two commands (show version and show running-config), mentioned in the module, worked with ansible_connection and ansible_network_os introduced in the inventory, as per [ERIC_ECCLI Platform Options](https://docs.ansible.com/ansible/latest/network/user_guide/platform_eric_eccli.html). The predefined checks in result[0] and result[1], used in wait_for parameter, give clue to the Ansible user that at least commands are getting executed on the server(s)
 
 As I understood result[0] can be used for all commands, including the 'show version' where grep can be made on the string 'IPOS' similary result[1] is set for 'management' to check the output for. Is one of the two strings always present in the output of any ECCLI? Where are the rest of result[i] definitions otherwise? i.e. what are the rest of result[i] supposed to contain? No relevant description found 
 
