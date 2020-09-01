@@ -7,7 +7,7 @@ All example of two commands (show version and show running-config), mentioned in
 
 result[0] can be used for all commands where the result would have string 'IPOS', similary the result[1] is set to look for string 'management' in the output. However result[i] vars are not available for Ansible user to use the output as per need, for example in debug module. Also 'IPOS' and/or 'management' strings may not be present always in the output every ECCLI. Is i = [0,1] otherwise what could be result[i] looking in the output where i >= 2? No relevant description found 
 
-Irrespective of presumbale satisfaction that commmands are getting excuted on the server(s), the Ansible user stays blind with the output of the commands. The module does not support the register parameter to store the output in a var for Ansible user to review or further use.
+Irrespective of presumbale satisfaction that commmands are getting excuted on the server(s), the Ansible user stays blind on what is the output of the commands. The module does not support the register parameter to store the output in a var for Ansible user to review or further use.
 
 [cli_command](https://docs.ansible.com/ansible/latest/modules/cli_command_module.html), introduced in Ansible 2.7, amazingly had no issue in running the said commands, described in [eric_eccli_command](https://docs.ansible.com/ansible/latest/modules/eric_eccli_command_module.html) documentation, on Ericsson ECCLI/IPOS network. And the module also supports registering the output.
 
