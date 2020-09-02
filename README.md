@@ -11,6 +11,8 @@ Irrespective of presumbale satisfaction that commmands are getting excuted on th
 
 [cli_command](https://docs.ansible.com/ansible/latest/modules/cli_command_module.html), introduced in Ansible 2.7, amazingly had no issue in running the said commands, described in [eric_eccli_command](https://docs.ansible.com/ansible/latest/modules/eric_eccli_command_module.html) documentation, on Ericsson ECCLI/IPOS network. And the module also supports registering the output.
 
+However in order to use cli_command to on Ericsson ECCLI/IPOS network, you need to set ansible_network_os = eric_eccli. Ansible 2.7 doesn't recognize this value. Ansible 2.9 is therefor must to use either cli_command or eric_eccli_command module.
+
 Get your inventory ready with hosts and vars like ansible_connection, ansible_user, ansible_ssh_pass (though plain text not recommmended), ansible_network_os to try both modules
 
 ![724TD2](https://user-images.githubusercontent.com/47313728/88474627-6244ed00-cedd-11ea-9e6d-591317056991.png)
